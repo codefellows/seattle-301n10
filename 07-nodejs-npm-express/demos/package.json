@@ -1,0 +1,16 @@
+{
+  "name": "301d30-day-7",
+  "version": "1.0.0",
+  "description": "Lecture code for 301d30 day 7",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Vinicio & Allie",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "uuid": "^3.2.1"
+  }
+}

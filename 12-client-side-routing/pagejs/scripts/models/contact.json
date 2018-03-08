@@ -1,0 +1,44 @@
+[
+  {
+    "id": 33,
+    "name": "Brook",
+    "favorite number": 42,
+    "ninja": true
+  },
+  {
+    "id": 27,
+    "name": "Sam",
+    "favorite number": 3,
+    "ninja": false
+  },
+  {
+    "id": 13,
+    "name": "JB",
+    "favorite number": 13,
+    "ninja": true
+  },
+  {
+    "id": 99,
+    "name": "Allie",
+    "favorite number": "&#960;",
+    "ninja": false
+  },
+  {
+    "id": 2,
+    "name": "TA Dustin",
+    "favorite number": 5,
+    "ninja": true
+  },
+  {
+    "id": 5150,
+    "name": "Ron",
+    "favorite number": 3,
+    "ninja": true
+  },
+  {
+    "id": 1,
+    "name": "!TA Dustin",
+    "favorite number": 1,
+    "ninja": true
+  }
+]

@@ -1,0 +1,123 @@
+@import '../vendor/styles/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,500');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(73, 73, 73);
+}
+
+header, main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 1.5em 0;
+  margin: 0;
+  text-align: center;
+  font-size: 125%;
+  font-weight: 400;
+}
+
+h1 div {
+  display: inline-block;
+  border-bottom: 2px solid rgb(73, 73, 73);
+  line-height: 0.9em;
+}
+
+h2 {
+  font-size: 125%;
+  font-weight: 400;
+  margin-top: 4em;
+}
+
+label {
+  display: block;
+  margin-top: 2.5em;
+  font-size: 125%;
+}
+
+div label {
+  display: inline-block;
+  margin-top: 0px;
+}
+
+input[type="text"], select {
+  margin-top: .5em;
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  font-size: 100%;
+  font-weight: 200;
+  padding-left: .75em;
+  color: rgb(155, 155, 155);
+  border-radius: 2px;
+  background-color: white;
+  outline: none;
+  border: 1px solid rgb(155, 155, 155);
+}
+
+.invalid-input {
+  border: 1px solid red !important;
+}
+
+.invalid-warn {
+  text-align: right;
+}
+
+#invalid-input-box {
+  height: 110px;
+}
+
+label div {
+  margin-top: .25em;
+  color: red;
+  font-size: 85%;
+}
+
+input[type="submit"] {
+  margin: 1em 1em 2em 0px;
+  border: none;
+  background-color: rgb(216, 216, 216);
+  color: rgb(71, 71, 71);
+  padding: .6em 1.75em;
+  font-size: 100%;
+  border-radius: 2px;
+}
+
+input[type="submit"]:last-of-type {
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+
+/*Sprites*/
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+  margin-right: 5%;
+}
+
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../vendor/sprites/form-elements-sprite.png) no-repeat;
+}
+
+input[type="checkbox"]:checked + label span {
+  background: url(../vendor/sprites/form-elements-sprite.png) -100px top no-repeat;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(../vendor/sprites/form-elements-sprite.png) -200px top no-repeat;
+}
+
+input[type="radio"]:checked + label span {
+  background: url(../vendor/sprites/form-elements-sprite.png) -300px top no-repeat;
+}

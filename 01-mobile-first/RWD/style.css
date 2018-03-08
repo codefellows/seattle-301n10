@@ -1,0 +1,29 @@
+body {
+  background-color: red;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 4vw;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: green;
+  }
+
+  h2 {
+    background-color: purple;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: grey;
+  }
+
+  h2 {
+    background-color: orange;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UI Challenge 2</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><div>UI Challen</div>g<div>e - Custom Form Elements</div></h1>
+    </header>
+    <main>
+      <form>
+        <label>
+          text input
+          <input type="text" name="text-input" placeholder="placeholder text" />
+        </label>
+        <label id="invalid-input-box">
+          text input w/ validation error
+          <input class="invalid-input" type="text" name="text-input-validation" placeholder="placeholder text" />
+          <div class="invalid-warn">please enter a valid username</div>
+        </label>
+        <label>
+          select box
+          <select name="select-closed">
+            <option value="hide">please select an option . . .</option>
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+            <option>option 4</option>
+            <option>option 5</option>
+          </select>
+        </label>
+        <label>
+          select box - open
+          <select name="select-open">
+            <option value="hide">please select an option . . .</option>
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+            <option>option 4</option>
+            <option>option 5</option>
+          </select>
+        </label>
+        <h2>checkbox</h2>
+        <div>
+          <input type="checkbox" id="unchecked-on-load" name="unchecked-on-load" />
+          <label for="unchecked-on-load"><span></span></label>
+          <input type="checkbox" id="checked-on-load" name="checked-on-load" checked/>
+          <label for="checked-on-load"><span></span></label>
+        </div>
+        <label>
+          radio
+          <div>
+            <input type="radio" name="rb" id="deselected-on-load" />
+            <label for="deselected-on-load"><span></span></label>
+            <input type="radio" name="rb" id="selected-on-load" checked />
+            <label for="selected-on-load"><span></span></label>
+          </div>
+        </label>
+        <label>buttons
+          <div>
+            <input type="submit" name="submit-light" value="submit" />
+            <input type="submit" name="submit-dark" value="submit" />
+          </div>
+        </label>
+      </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </body>
+</html>
