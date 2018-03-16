@@ -33,6 +33,10 @@ a {
   display: none;
 }
 
+nav:hover .nav-ul {
+  display: block;
+}
+
 .hamburger {
   display: block;
 }
