@@ -25,7 +25,8 @@ ABCD:
 
 * Distinguish between the different Handlebars expression types ( **{{}}** vs **{{{}}}** ).
 
-* Modify and style typographic components (**serif, san-serif fonts, font-size, font-family, color, font-weight**, etc)
+* Introduce ES6 Arrow functions
+* Review Regular Expressions
 
 ## Readings
 <!-- List of readings required for this content; readings being completed by the start of this lecture -->
