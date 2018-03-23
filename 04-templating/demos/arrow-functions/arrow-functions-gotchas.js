@@ -15,3 +15,5 @@ function Article(title, author) {
   const a = new Article('A day in the life of a function','Jay Script');
   
   console.log(a.summary())
+
+  // more gotchas at https://codepen.io/jb-tellez/pen/RjbRYX
