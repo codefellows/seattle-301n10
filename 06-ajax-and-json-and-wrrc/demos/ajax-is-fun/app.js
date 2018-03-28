@@ -1,32 +1,74 @@
-// Let's do this
-
 const url = 'https://server-wuvttyijde.now.sh/books';
+  
+// Why am I doing this here?
+const bookTemplate = $('#book-template').text();
+const bookRender = Handlebars.compile(bookTemplate);
 
-$.get('https://swapi.co/api/people/1')
-    .then(result => console.log('May the force...', result));
+$('#get-books').on('click', getBooks);
 
-// how to call this https://server-wuvttyijde.now.sh/books
-// and get books?
-const template = $('#book-template').text();
-const render = Handlebars.compile(template); // the "buddy"
-
-$('form').on('submit', (event) => {
+$('#make-book-form').on('submit', function(event) {
     event.preventDefault();
-    const bookName = $('#book-name').val();
-    const bookAuthor = $('#book-author').val()
-    $.post(url, {name: bookName, author: bookAuthor})
+    makeBook();
 });
 
+function getBooks() {
+    
+    $.getJSON(url)
+        .then(books => {
+            console.log('Total Books:', books.length);
 
-$.getJSON(url)
-    .then(books => {
+            $('ul').empty();
 
-        books.forEach(book => {
-           const bookHtml = render(book); 
-           $('ul').append(bookHtml);
-        })
+            books.forEach(book => {
+                console.log(book);
+                $('ul').append(bookRender(book));
+            });
+        });
+}
+
+function makeBook() {
+
+    const book = $('#make-book-form').serialize(); // how handy!
+
+    $('#make-book-form')[0].reset(); // note the [0]
+
+    $.post(url, book).then((data, status) => {
+        console.log('status', status);
+        getBooks();
     });
 
-    $.getJSON('data/invalid-data.json').then(results => {
-        console.log('RESULTS', results);
-    }).catch(err => console.error('ERROR:', err))
+}
+
+
+// AJAX Formats
+
+/* FORMAT OF $.ajax
+$.ajax({
+    url:
+    method:
+    success:
+    fail:
+  })
+  
+  // FORMAT OF $.get
+  $.get(url)
+    .done(successCallback)
+    .fail(failureCallback)
+    .always(everyTimeCallback)
+    .then(nextCallback)
+  
+  // FORMAT OF $.getJSON
+  $.getJSON(url)
+    .then(successCallback, failureCallback)
+*/
+
+/*
+$.getJSON('data/invalid-data.json')
+    .then(data => console.log(data))
+    .catch(err => console.error(err))
+    .always(result => console.log('always runs'));
+*/
+
+// BONUS: Star Wars if Fun!
+// $.get('https://swapi.co/api/people/1')
+//     .then(result => console.log(result));

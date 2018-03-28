@@ -5,29 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AJAX is Fun</title>
+    <title>Ajax Fun</title>
     <script id="book-template" type="text/x-handlebars-template">
-        <li>{{name}} : {{author}}</li>
+        <li>
+            <p>{{name}}  : {{author}}</p>
+        </li>
     </script>
 </head>
 
 <body>
 
-
-    <form>
-        <input id="book-name" type="text" placeholder="Name" required>
-        <input id="book-author" type="text" placeholder="Author" required>
-        <button>Make Book</button>
+    <button id="get-books">Get Books</button>
+    
+    <form id="make-book-form">
+        <label for="">
+            <input name="name" type="text" placeholder="Name" required>
+        </label>
+        <label for="">
+            <input name="author" type="text" placeholder="Author" required>
+        </label>
+        <button id="make-book">Make Book</button>
     </form>
-
     <hr>
     <ul>
         <!-- books go here -->
     </ul>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js" integrity="sha256-JWyJjSicZs/EX4AJmuCHSYYARSvIkYeM79Dn1pJOSCE="
-        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script src="app.js"></script>
 </body>
 
