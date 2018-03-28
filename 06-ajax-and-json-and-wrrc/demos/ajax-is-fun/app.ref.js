@@ -39,6 +39,29 @@ function makeBook() {
 
 }
 
+
+// AJAX Formats
+
+/* FORMAT OF $.ajax
+$.ajax({
+    url:
+    method:
+    success:
+    fail:
+  })
+  
+  // FORMAT OF $.get
+  $.get(url)
+    .done(successCallback)
+    .fail(failureCallback)
+    .always(everyTimeCallback)
+    .then(nextCallback)
+  
+  // FORMAT OF $.getJSON
+  $.getJSON(url)
+    .then(successCallback, failureCallback)
+*/
+
 // BONUS: Star Wars if Fun!
 // $.get('https://swapi.co/api/people/1')
 //     .then(result => console.log(result));
