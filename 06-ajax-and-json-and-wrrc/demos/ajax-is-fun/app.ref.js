@@ -62,6 +62,13 @@ $.ajax({
     .then(successCallback, failureCallback)
 */
 
+/*
+$.getJSON('data/invalid-data.json')
+    .then(data => console.log(data))
+    .catch(err => console.error(err))
+    .always(result => console.log('always runs'));
+*/
+
 // BONUS: Star Wars if Fun!
 // $.get('https://swapi.co/api/people/1')
 //     .then(result => console.log(result));
