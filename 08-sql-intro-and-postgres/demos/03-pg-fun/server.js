@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 3000;
 const pg = require('pg');
 
 // WARNING: Database must exist - so run CREATE DATABASE whatever; from psql shell as needed
+// NOTE: connectionString structure different for Unix/Windows
 const connectionString = 'postgres://localhost:5432/users';
 const client = new pg.Client(connectionString);
 client.connect();
