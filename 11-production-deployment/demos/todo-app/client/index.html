@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+
+    <script type="text/x-handlebars-template" id="error-template">
+      <p>{{status}}: {{statusText}}</p>
+    </script>
+
+    <script type="text/x-handlebars-template" id="task-template">
+      <li class="task-item">
+        <h4>Task: {{title}}</h4>
+        <p>Desciption: {{description}}</p>
+        <p>Contact person: {{contact}}</p>
+        <p>Completion status: {{status}}</p>
+        <p>Category: {{category}}</p>
+        <p>Complete this task by {{due}}</p>
+      </li>
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <h1>My To-Do List</h1>
+    </header>
+    <main>
+      <section class="error-view container">
+        <h3>Something went wrong</h3>
+        <section id="error-message"></section>
+      </section>
+      <section class="task-view container">
+        <h3>My Tasks</h3>
+        <!-- <section class="task-list"> -->
+          <ul id="task-list"></ul>
+        </section>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+    <script src="./scripts/models/task.js" type="text/javascript"></script>
+    <script src="./scripts/views/task-view.js" type="text/javascript"></script>
+    <script src="./scripts/views/error-view.js" type="text/javascript"></script>
+  </body>
+</html>
