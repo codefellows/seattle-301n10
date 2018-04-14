@@ -16,6 +16,6 @@ var app = app || {};
 })(app)
 
 $(function() {
-  console.log('in iffe');
+  console.log('in IIFE?');
   app.Task.fetchAll(app.taskView.initIndexPage);
 })
