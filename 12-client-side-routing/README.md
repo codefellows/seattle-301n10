@@ -34,3 +34,10 @@ ABCD:
 * [A Classic MVC blog post](http://blog.codinghorror.com/understanding-model-view-controller/)
 
 * [Page.js Readme](https://github.com/visionmedia/page.js) (Reference. Read up until "Plugins" section)
+
+## Demo
+* [GitHub repo](https://github.com/JB-Tellez/internets-of-thing)
+* [GitHub Pages](https://jb-tellez.github.io/internets-of-thing/)
+
+## Link Heroku and Github
+* [Github Integration](https://devcenter.heroku.com/articles/github-integration)
