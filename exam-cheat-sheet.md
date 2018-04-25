@@ -5,9 +5,10 @@
 - [ ] Take your time
 - [ ] Use your tools
 - [ ] Refer to quizzes
+- [ ] Seriously, take a break.
 
 
-## Examples of some thorny ones
+## Sample Thorny Questions
 
 ---
 
