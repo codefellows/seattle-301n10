@@ -11,14 +11,29 @@ NOTE: Instructor/TAs can only give general tips and strategies on the exam. But 
 
 
 
-## Food for thought
+## Nuggets
 
+Functional Programming
 	A core concept in functional programming is the "pure function." A pure function is a function which:
 	
 	- Given the same input, will always return the same output.
 	- Produces no side effects.
 	
 	Array.map/filter/reduce are "pure" because they return new collections without changing (aka mutating) the original array. Note: not all Array methods are pure.
+
+Model View Controller
+
+```
+1. Model
+The classes which are used to store and manipulate the application's state, typically in a database of some kind.
+
+2. View
+The user interface bits (in this case, HTML) necessary to render the model to the user.
+
+3. Controller
+The brains of the application. The controller decides what the user's input was, how the model needs to change as a result of that input, and which resulting view should be used.
+```
+[Source](https://blog.codinghorror.com/understanding-model-view-controller/)
 
 ## Sample Thorny Questions
 
@@ -168,7 +183,7 @@ Tuesday:5.5 cookies
 Wednesday:7 cookies
 ```
 
-__NOTE: mind the spaces!__
+__NOTE: mind the spaces and the new lines!__
 
 What code could you write to get the sum of all cookies eaten on Monday?
 
