@@ -3,6 +3,7 @@
 - [ ] Take break
 - [ ] Be 100% sure before answering
 - [ ] Take your time
+- [ ] Check the docs
 - [ ] Use your tools
 - [ ] Refer to quizzes
 - [ ] Seriously, take a break.
@@ -21,7 +22,7 @@ Functional Programming
 	
 	Array.map/filter/reduce are "pure" because they return new collections without changing (aka mutating) the original array. Note: not all Array methods are pure.
 
-Model View Controller
+[Model View Controller](https://blog.codinghorror.com/understanding-model-view-controller/)
 
 ```
 1. Model
@@ -33,7 +34,7 @@ The user interface bits (in this case, HTML) necessary to render the model to th
 3. Controller
 The brains of the application. The controller decides what the user's input was, how the model needs to change as a result of that input, and which resulting view should be used.
 ```
-[Source](https://blog.codinghorror.com/understanding-model-view-controller/)
+
 
 ## Sample Thorny Questions
 
