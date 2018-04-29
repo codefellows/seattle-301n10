@@ -10,6 +10,16 @@
 NOTE: Instructor/TAs can only give general tips and strategies on the exam. But more specific feedback can be given on Quiz questions. So if you are not 100% on each quiz then ask for help.
 
 
+
+## Food for thought
+
+	A core concept in functional programming is the "pure function." A pure function is a function which:
+	
+	- Given the same input, will always return the same output.
+	- Produces no side effects.
+	
+	Array.map/filter/reduce are "pure" because they return new collections without changing (aka mutating) the original array. Note: not all Array methods are pure.
+
 ## Sample Thorny Questions
 
 ---
