@@ -119,7 +119,9 @@ $.getJSON("/albums", function(data) {
 ```
 
 
-```var data = $.getJSON("/albums")
+```
+var data = $.getJSON("/albums");
+
 var coltrane = data.albums.filter(function (album) {
     return album.artist == "John Coltrane";
 });
