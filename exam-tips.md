@@ -6,6 +6,7 @@
 - [ ] Check the docs
 - [ ] Use your tools
 - [ ] Refer to quizzes
+- [ ] Use deduction
 - [ ] Seriously, take a break.
 
 NOTE: Instructor/TAs can only give general tips and strategies on the exam. But more specific feedback can be given on Quiz questions. So if you are not 100% on each quiz then ask for help.
