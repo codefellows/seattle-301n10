@@ -3,6 +3,7 @@
 - [ ] Take break
 - [ ] Be 100% sure before answering
 - [ ] Take your time
+- [ ] What is __actually__ being asked?
 - [ ] Check the docs
 - [ ] Use your tools
 - [ ] Refer to quizzes
